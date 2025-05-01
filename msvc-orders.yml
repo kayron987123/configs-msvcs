@@ -1,12 +1,12 @@
 spring:
   data:
     redis:
-      host: localhost
+      host: redis-msvc-orders
       port: 6381
       connect-timeout: 2000
       client-type: jedis
     mongodb:
-      host: localhost
+      host: mongodb-msvc-orders
       port: 27017
       database: msvc-orders
       username: gad-dev
@@ -20,7 +20,7 @@ spring:
 eureka:
   client:
     service-url:
-      DefaultZone: http://localhost:8761/eureka
+      DefaultZone: http://eureka-server:8761/eureka
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 

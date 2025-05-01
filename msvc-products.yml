@@ -8,7 +8,7 @@ spring:
     type: redis
   data:
     redis:
-      host: localhost
+      host: redis-msvc-products
       port: 6379
       connect-timeout: 2000
       client-type: jedis
@@ -26,7 +26,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://eureka-server:8761/eureka
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
