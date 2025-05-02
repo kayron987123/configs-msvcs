@@ -3,7 +3,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://msvc-oauth:9100
+          issuer-uri: http://localhost:9100
       client:
         registration:
           client-gateway-app:
@@ -11,14 +11,14 @@ spring:
             client-id: client-gateway-app
             client-secret: 12345
             authorization-grant-type: authorization_code
-            redirect-uri: http://gateway:8080/login/oauth2/code/client-gateway-app
+            redirect-uri: http://localhost:8080/login/oauth2/code/client-gateway-app
             scope:
               - openid
               - profile
             client-name: client-app
         provider:
           spring:
-            issuer-uri: http://msvc-oauth:9100
+            issuer-uri: http://localhost:9100
   cloud:
     gateway:
       routes:
@@ -140,7 +140,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka-server:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
 
 custom:
   path: /api/v1
