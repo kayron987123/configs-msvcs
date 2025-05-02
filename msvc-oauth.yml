@@ -5,12 +5,12 @@ spring:
         issuer: http://msvc-oauth:9100
     cache:
       type: redis
-    data:
-      redis:
-        host: redis-msvc-oauth
-        port: 6383
-        connect-timeout: 2000
-        client-type: jedis
+  data:
+    redis:
+      host: redis-msvc-oauth
+      port: 6383
+      connect-timeout: 2000
+      client-type: jedis
   docker:
     compose:
       file: ./msvc-oauth/compose.yaml
