@@ -13,9 +13,6 @@ spring:
       password: 12345
     cache:
       type: redis
-  docker:
-    compose:
-      file: ./msvc-orders/compose.yaml
 
 eureka:
   client:
