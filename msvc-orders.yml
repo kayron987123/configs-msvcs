@@ -1,7 +1,7 @@
 spring:
   data:
     redis:
-      host: redis-msvc-orders
+      host: localhost
       port: 6381
       connect-timeout: 2000
       client-type: jedis

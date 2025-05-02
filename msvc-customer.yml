@@ -8,7 +8,7 @@ spring:
     type: redis
   data:
     redis:
-      host: redis-msvc-customers
+      host: localhost
       port: 6382
       connect-timeout: 2000
       client-type: jedis
