@@ -16,6 +16,9 @@ spring:
       server-selection-timeout: 5000
     cache:
       type: redis
+  docker:
+    compose:
+      file: ./msvc-orders/compose.yaml
 
 eureka:
   client:

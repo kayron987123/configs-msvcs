@@ -11,6 +11,9 @@ spring:
       port: 6383
       connect-timeout: 2000
       client-type: jedis
+  docker:
+    compose:
+      file: ./msvc-oauth/compose.yaml
 
 server:
   port: 9100
