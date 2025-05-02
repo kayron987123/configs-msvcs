@@ -11,6 +11,9 @@ spring:
       database: msvc-details-order
       username: gad-dev
       password: 12345
+      socket-timeout: 5000
+      connect-timeout: 3000
+      server-selection-timeout: 5000
     cache:
       type: redis
 
